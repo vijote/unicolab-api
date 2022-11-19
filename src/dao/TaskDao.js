@@ -8,8 +8,8 @@ class TaskDao extends SuperDao {
         super(Task);
     }
 
-    async getAll() {
-        return this.Model.findAll();
+    async getAll(options) {
+        return this.Model.findAll(options);
     }
 }
 
